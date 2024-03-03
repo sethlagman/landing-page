@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER CSS */
@@ -12,6 +14,7 @@ header {
     color: white;
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 10px;
 }
 
 header h1 {
@@ -43,11 +46,17 @@ ul {
 
 .lower {
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .awesome {
-    font-size: 2.5vh;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.awesome p {
+    margin: 0;
+    padding: 0;
 }
 
 .description {
@@ -56,10 +65,17 @@ ul {
     flex: 1;
 }
 
+
 .description button {
-    width: 8vh;
+    width: 9vh;
     padding: 5px;
+    height: 30px;
     justify-content: flex-start;
+    background-color: #3882F6;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .placeholder {
@@ -73,4 +89,153 @@ ul {
 .placeholder h3 {
     display: flex;
     align-items: center;
+}
+
+.links a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+#subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* CONTAINER 1 */
+
+.container-1 {
+    text-align: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.container-1 h1 {
+    padding-bottom: 20px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 16px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+.box {
+    padding: 0;
+    width: 250px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 23px;
+    padding: 10px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* CONTAINER 2*/
+
+.container-2 {
+    background-color: #E5E7EB;
+    height: 60vh;
+    padding-right: 380px;
+    padding-left: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-2 h1 {
+    text-align: left;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.container-2 h2 {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+/* CONTAINER 3*/
+
+.container-3 {
+    height: 40vh;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 250px;
+    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action {
+    background-color: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+}
+
+.action button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.act p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.act h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    background-color: #1F2937;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
